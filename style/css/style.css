@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+}
+.perfect-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-mb{
+    position: fixed;
+    background-color: #222;
+    opacity: .7;
+    width: 100%;
+    display: flex;  
+}
+.menu-mb a{
+    display: inline-block;
+    width: 25%;
+    color: white;
+    text-decoration: none;
+    padding: 12px 12px;
+}
+.menu{
+    position: fixed;
+    width: 120px;
+    background-color: #222;
+}
+.list-items {
+    list-style-type: none;
+    font-size: 34px;
+   
+}
+.list-items img{
+    object-fit: cover;
+    width: 100%;
+    opacity: .5;
+    height: 100%;
+}
+
+.list-items span{
+    font-weight: bolder;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 12px;
+    
+}
+.list-items li img:hover {
+    cursor: auto;
+}
+.list-items li {
+    width: 100%;
+    height: 126px;
+    flex-direction: column;
+    transition: .3s linear; 
+}
+.list-items li a{
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+
+}
+.list-items li:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    
+}
+.my-info{
+    padding: 12px 120px;
+    margin-left: 120px;
+    background-color: black;
+    
+    
+}
+.info{
+    flex-direction: column;
+}
+.name{
+    background-color: black;
+ 
+    width: 100%;
+    flex-direction: column;
+    
+}
+.name h1{
+    font-weight: lighter;
+    font-size: 80px;
+    padding: 20px 0;
+}
+.name h4{
+    font-weight: lighter;
+    font-size:20px;
+    padding: 10px 0;
+}
+.my-img img {
+    width: 100%;
+}
+.name-skill{
+    margin: 24px 0;
+}
+.my-name h3,.my-skill h3, h3{
+    font-size: 32px;
+    padding: 16px 0;
+    border-bottom:1px solid white ;
+    width: 25%;
+}
+.my-name p{
+    font-size: 16px;
+    padding: 16px 0;
+    color: #757575;
+    line-height: 1.4;
+}
+.info-skill{
+    margin: 16px 0;
+}
+.my-skill p{
+    color: #757575;
+    font-size: 20px;
+}
+.bar{
+    background-color: white;
+    width: 100%;
+    height: 25px;
+    margin: 12px 0;
+}
+.sub-photo{
+    background-color: red;
+    width: var(--percent);
+    height: inherit;
+    animation: growth ease-in 1s;
+    line-height: 25px;
+}
+.sub-soccer{
+    background-color: red;
+    width: var(--percent);
+    height: inherit;
+    animation: growth ease-in 1s;
+    line-height: 25px;
+}
+.sub-web{
+    background-color: red;
+    width: var(--percent);
+    height: inherit;
+    animation: growth ease-in 1s;
+    line-height: 25px;
+}
+@keyframes growth {
+    from{
+        opacity: 0;
+        width: calc(var(--percent)-50%);
+    }
+    to{
+        opacity: 1;
+        width:var(--percent) ;
+    }
+}
+.project{
+    height: 100px;
+    padding: 16px 16px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 18px;
+    color: #474242;
+}
+.project span{
+    display: block;
+    text-align: center;
+    font-size: 32px;
+    color: black;
+}
+.download{
+    display: inline-block;
+    margin: 24px 0;
+    padding: 12px 24px;
+    background-color: white;
+    color: black;
+    transition: .3s linear;
+}
+.download i {
+    margin-right: 5px;
+}
+.download:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.my-price{
+    display: flex;
+    text-align: center;
+    justify-content: space-between ;
+    margin: 24px 0;
+    
+}
+.my-price h2{
+    margin: 10px 0;
+}
+.price-left:hover,.price-right:hover{
+    opacity: 1;
+}
+.price-left{
+    width: 48%;
+    opacity: 0.6;
+    transition: .3s linear;
+}
+.price-right{
+    width: 48%;
+    opacity: 0.6;
+    transition: .3s linear;
+}
+.price-left li:nth-child(1),.price-right li:nth-child(1){
+    background-color:  #757575;
+    padding: 32px 32px;
+    font-size: 30px;
+}
+.price-left ul,.price-right ul{
+    list-style-type: none;
+
+}
+.my-price ul li {
+    border-bottom:1px solid #757575 ;
+}
+.price-items{
+    padding: 16px 0;
+    background-color: white;
+    color: black;
+}
+.price-left li:nth-last-child(1),.price-right li:nth-last-child(1){
+    background-color:  #f1f1f1e8;
+    padding: 32px 32px;
+    font-size: 30px;
+
+}
+.my-price ul li span{
+   color: #757575;
+  
+}
+.my-price button{
+    padding: 16px 32px;
+    font-size: 16px;
+    background-color: #ffffff;
+    border: none;
+    transition: .2s linear; 
+}
+.my-price button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+
+}
+.my-contact{
+    margin: 24px 0;
+    font-size: 20px;
+    
+}
+.contact{
+    padding: 12px 0;
+}
+.contact i{
+    font-size: 30px;
+}
+.contact span{
+    margin-left: 24px;
+    color: #757575;
+}
+.my-contact p{
+    margin-top: 24px;
+    color: #757575;
+}
+
+.text,.email,.subject,.message{
+    width: 100%;
+    height: 60px;
+    margin: 8px 0;
+    padding: 8px 16px;
+    font-size: 16px;
+}
+.my-contact button{
+    padding: 16px 20px;
+    margin: 8px 0;
+    font-size: 16px;
+    transition: .3s linear;
+}
+.my-contact button span{
+    margin-left: 8px;
+}
+.my-contact button:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+footer{
+    padding: 150px 0;
+    font-size: 32px;
+    color: #757575;
+}
+footer p{
+    font-weight: bolder;
+    margin-top: 32px;
+    font-size: 100px;
+    color: transparent;
+    background-image: linear-gradient(to right ,red,blue);
+    display: block;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+footer i:hover{
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+@media  (max-width:740px){
+    .menu{
+        display: none;
+    }
+    .name{
+        margin: 8px 0;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .my-info{
+        width: auto;
+        padding: 20px 32px;
+        margin: 0;
+    }
+    .menu-mb a:hover{
+        background-color: #ccc;
+        color: black;
+    }
+    .project{
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        margin-top: 16px ;
+    }
+    .my-price{
+        display: flex;
+        flex-direction: column;
+    }
+    .list-projects{
+        padding: 15px 0;
+    }
+    .price-left,.price-right{
+        width: 100%;
+        margin-top: 15px;
+    }
+    footer p {
+        font-size: 50px;
+    }
+}
+@media (min-width:740px) and (max-width: 1023px) {
+    .menu-mb{
+        display: none;
+    }
+    
+    .my-info{
+        
+        margin-left: 120px;
+        padding: 20px 20px;
+    }
+    .menu{
+        display: block;
+        height: 100%;
+    }
+}
+@media (min-width:1024px) {
+    .menu-mb{
+        display: none;
+    }
+}
